@@ -23,7 +23,17 @@ st.set_page_config(page_title="💬 Chat with Pituitary gland", page_icon="💬"
 st.title("💬 Chat with Pituitary gland ")
 
 
-user_input = st.text_input("***If you encounter any error, just hit submit again***", "  ")
+user_input = st.text_input("***If you encounter any error, just hit submit again***", "腦垂體腫瘤的新分類？  ")
+
+response = None
+
+# ... (other parts of your script)
+
+# Check if 'response' is not None before trying to access its 'text' attribute
+if response is not None:
+    st.markdown(response['text'])
+else:
+    st.markdown("No response received.")
 
 if st.button("Submit", key='submit_button1'):
         response = query_api(user_input)
