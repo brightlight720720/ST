@@ -7,7 +7,11 @@ st.set_page_config(page_title="Voting Page", page_icon="📈")
 
 st.markdown("# Voting Page")
 
-st.write('您同意PitNETs 納入重大傷病嗎')
+st.write('2022 WHO 分類將 pituitary tumors 改名為pituitary endocrine tumor (PitNET) , 並將PitNET 視為惡性腫瘤診斷')
+st.write('2022 年底, 癌登中心發文 將PitNET 列入惡性腫瘤 納入長表')
+st.write('是否將Pituitary adenoma/PitNET 在台灣也列為重大傷病,比照其他癌症辦理,需要您寶貴的意見')
+
+st.write('***您同意將Pituitary adenoma/PitNET 在台灣也列為重大傷病,比照其他癌症辦理嗎***')
 
 # Try to Load existing data
 try:
