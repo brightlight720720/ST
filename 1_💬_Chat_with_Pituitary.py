@@ -25,8 +25,7 @@ st.set_page_config(page_title="💬 Chat with Pituitary gland", page_icon="💬"
 st.title("💬 Chat with Pituitary gland ")
 
 
-
-st.sidebar.success("Please visit Voting Page if you finish chating with pituitary gland.")
+#st.sidebar.success("Please visit Voting Page if you finish chating with pituitary gland.")
 
 with st.sidebar:
       #  st.markdown("")
@@ -55,7 +54,7 @@ with st.sidebar:
 API_URL = "https://endo.onrender.com/api/v1/prediction/c2732f4d-c665-4988-9665-ccee123843b7"
 
 
-user_input = st.text_input("***If you encounter any error, just hit submit again***", "腦垂體腫瘤的新分類？")
+user_input = st.text_input("***If you encounter any error, just hit submit again***", "為什麼要將pituitary adenoma 改名為Pituitary neuroendocrine tumors?")
 
 response = None  # Initialize response to None
 
@@ -82,6 +81,7 @@ if response:  # Check if response is not None
             st.markdown("---")
 
 
+st.write("**Please visit Voting Page if you finish chating with pituitary gland.**")
                 
 
                 
