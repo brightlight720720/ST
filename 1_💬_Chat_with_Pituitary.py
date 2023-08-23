@@ -62,7 +62,7 @@ if st.button("Submit", key='submit_button1'):
     if user_input:
         response = query_api(user_input)
         if response is None:
-            st.write("Failed to get a valid response from the API.")
+            st.write("Failed to get a valid response from the ChatGPT API.")
     else:
         st.write("Please enter a valid question.")       
 
